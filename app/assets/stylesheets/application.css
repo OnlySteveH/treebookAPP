@@ -23,19 +23,25 @@
 
 }
 
-
+.nav-container a {
+  margin-left: 10px;
+  padding-left: 47px;
+  margin-bottom: 25px;
+}
 
 
 .nav-container li {
-  padding-top: 10px;
+  padding-top: 20px;
+
+
 }
 
 .nav{
   position: relative;
   height: auto;
   width: 120px;
-  margin-top: 40px;
-  margin-left: -70px;
+  margin-top: 70px;
+  margin-left: 30px;
 
 }
 
