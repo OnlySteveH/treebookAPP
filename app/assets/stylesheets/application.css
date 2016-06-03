@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+
+
+.nav-container{
+  position: fixed;
+  height: 100%;
+  background: black;
+  width: 210px;
+
+}
+
+
+
+
+.nav-container li {
+  padding-top: 10px;
+}
+
+.nav{
+  position: relative;
+  height: auto;
+  width: 120px;
+  margin-top: 40px;
+  margin-left: -70px;
+
+}
+
+.page-content-container{
+  position: absolute;
+  margin-left: 250px;
+}
