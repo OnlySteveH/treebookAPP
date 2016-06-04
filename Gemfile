@@ -8,6 +8,9 @@ gem 'sqlite3'
 # will be used for our authentication system.
 gem 'devise'
 
+# to improve the UI of current forms.
+gem 'simple_form'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
