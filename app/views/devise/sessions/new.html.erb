@@ -1,6 +1,7 @@
 
 <div class="row"><!-- this was added so boostrap can let us add a div next to it -->
   <div class="col-xs-4">
+    <%= devise_error_messages! %>
     <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name),
     html:{class: "well"}) do |f| %>
       <div class="input-group">
