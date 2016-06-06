@@ -4,17 +4,21 @@ class StatusesController < ApplicationController
   # GET /statuses
   # GET /statuses.json
   def index
+    @user = User.find_by(params[:id])
     @statuses = Status.all
+
   end
 
   # GET /statuses/1
   # GET /statuses/1.json
   def show
+    @statuses = Status.all
   end
 
   # GET /statuses/new
   def new
     @status = Status.new
+    @status.build_document
   end
 
   # GET /statuses/1/edit
@@ -69,6 +73,6 @@ class StatusesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def status_params
-      params.require(:status).permit(:content, :user_id)
+      params.require(:status).permit(:content, :user_id, document_attributes: [ :status_id, :user_id, :attachments ])
     end
 end

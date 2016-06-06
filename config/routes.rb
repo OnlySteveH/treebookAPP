@@ -5,12 +5,14 @@ Rails.application.routes.draw do
       get "register",to: "devise/registrations#new", as: :register
       get "login", to: "devise/sessions#new", as: :login
       get "logout", to: "devise/sessions#destroy", as: :logout
+
     end
 
   resources :statuses
     get 'feed', to: "statutes#index", as: :feed
+    root 'statuses#index'
 
-  root 'statuses#index'
+    get '/:id', to: 'profiles#show' , as: 'profile'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
